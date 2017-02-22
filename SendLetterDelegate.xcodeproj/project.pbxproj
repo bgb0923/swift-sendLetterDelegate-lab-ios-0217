@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56A28B381E5CFE7400BB281C /* LondonViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A28B371E5CFE7400BB281C /* LondonViewControllerDelegate.swift */; };
 		5D19D8971DB95AE300CA6769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D19D8961DB95AE300CA6769 /* AppDelegate.swift */; };
 		5D19D89E1DB95AE300CA6769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D19D89D1DB95AE300CA6769 /* Assets.xcassets */; };
 		5D19D8A11DB95AE300CA6769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D19D89F1DB95AE300CA6769 /* LaunchScreen.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56A28B371E5CFE7400BB281C /* LondonViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LondonViewControllerDelegate.swift; sourceTree = "<group>"; };
 		5D19D8931DB95AE300CA6769 /* SendLetterDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendLetterDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D19D8961DB95AE300CA6769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D19D89D1DB95AE300CA6769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				5D19D89D1DB95AE300CA6769 /* Assets.xcassets */,
 				5D19D89F1DB95AE300CA6769 /* LaunchScreen.storyboard */,
 				5D19D8A21DB95AE300CA6769 /* Info.plist */,
+				56A28B371E5CFE7400BB281C /* LondonViewControllerDelegate.swift */,
 			);
 			path = SendLetterDelegate;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D19D8AC1DB95B3700CA6769 /* LondonViewController.swift in Sources */,
+				56A28B381E5CFE7400BB281C /* LondonViewControllerDelegate.swift in Sources */,
 				5D19D8AB1DB95B3700CA6769 /* NewYorkViewController.swift in Sources */,
 				5D19D8971DB95AE300CA6769 /* AppDelegate.swift in Sources */,
 			);
@@ -296,6 +300,7 @@
 				5D19D8A71DB95AE300CA6769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

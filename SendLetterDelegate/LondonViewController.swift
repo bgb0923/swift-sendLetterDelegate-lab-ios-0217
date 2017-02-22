@@ -10,6 +10,8 @@ import UIKit
 
 class LondonViewController: UIViewController, UITextViewDelegate {
     
+    weak var delegate: LondonViewControllerDelegate?
+    
     // View elements
     @IBOutlet weak var letterTextView: UITextView!
     @IBOutlet weak var letterHeaderLabel: UILabel!
@@ -41,6 +43,7 @@ class LondonViewController: UIViewController, UITextViewDelegate {
         animateLetter {
             self.dismiss(animated: true, completion: nil)
         }
+        self.delegate?.letterSent(from: self, message: self.letterTextView.text)
     }
     
     @IBAction func tapGestureTapped(_ sender: UITapGestureRecognizer) {
@@ -84,6 +87,8 @@ class LondonViewController: UIViewController, UITextViewDelegate {
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard(notification:)), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
+    
+    
     func adjustForKeyboard(notification: Notification) {
         
         switch notification.name.rawValue {
@@ -119,6 +124,7 @@ class LondonViewController: UIViewController, UITextViewDelegate {
         } else {
             sendButton.isHidden = false
             letterTextView.resignFirstResponder()
+            
         }
     }
     
